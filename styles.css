@@ -5,9 +5,16 @@
     text-decoration: none;
     /*quitar los puntos de la lista*/
     list-style: none;
-    /*para que los elementos no salgan de su contenedor*/
-    box-sizing: border-box;
+    /* para que los elementos no salgan de su contenedor
+    box-sizing: border-box; */
 }
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 body{
     background-color: #f9f9fa;
     font-family:Arial, Helvetica, sans-serif ;
@@ -18,15 +25,15 @@ body{
     height: 110px;
     box-shadow: 0px 10px 20px rgb(150, 150, 150) ;
 }
-.menu{    
+.menu{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;       
+    text-decoration: none;
 }
 .logo{
     position:absolute ;
     height: 80;
-    margin: 20px ;    
+    margin: 20px ;
 }
 .menu-movil{
     height: 16px;
@@ -47,43 +54,81 @@ nav ul li a{
     color: rgb(121, 121, 121);
     border-radius: 3px;
     text-transform: uppercase;
-    padding: 15px 1px;  
+    padding: 15px 1px;
 }
 li a.active, li a:hover{
-    background-color: rgb(167, 167, 167);  
+    background-color: rgb(167, 167, 167);
     color: rgb(243, 243, 243);
     transition: 0.5s;
 }
 #check{
-    display: none;    
+    display: none;
 }
 
 .checkbtn
-{   
-    
-    display: none; 
+{
+
+    display: none;
     font-size: 50px;
-    float: right;         
-    line-height: 110px;    
+    float: right;
+    line-height: 110px;
     margin-right: 20px;
-    cursor: pointer;      
+    cursor: pointer;
 }
+/* ******/
 main{
-    /* background-color: rgb(252, 250, 253); */    
+    /* background-color: rgb(252, 250, 253); */
     padding: 40px 20px;
     margin-top: 50px;
     text-align: justify;
 }
+/*Banner*/
+.banner{
+    background-image:url(./image/Fondo1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 500px;
+    /* padding: 20px; */
+    /* margin-top: 25px;     */
+    position: relative;
+}
+.contenido-banner{
+    position: absolute;
+                    /* red greed blue */
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.contenido-banner-texto{    
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 40px;
+}
+.contenido-banner-texto h1{    
+    font-size: 25px;
+    text-align: center;
+    color: #f9f9fa;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.contenido-banner-texto p{    
+    font-size: 25px;
+    text-align:justify;
+    color: #c5c5c5;
+    margin-bottom: 20px;
+}
+
 .contenedor{
     max-width: 1500px;
     margin: 30px auto;
     padding: 40px;
     background: #dfdfeb;
-    border-radius: 5px;    
-    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;
+    border-radius: 5px;
+    /* box-shadow: 0px 10px 10px rgb(150, 150, 150) ; */
+    background-color: rgb(0 0 0 / 70%);
 }
 .contenedor p {
-    margin-top: 20px; 
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 250;
 }
@@ -93,28 +138,28 @@ main{
 
 
 
-/* Responsive */ 
+/* Responsive */
 /* tabletas 952px */
 /* movil hasta 858px*/
 
 @media (max-width: 1220px) {
     .logo{
-        position:absolute ;        
-        height: 40;        
+        position:absolute ;
+        height: 40;
         margin-top: 35px;
-    }        
+    }
 }
-@media (max-width: 1080px) {    
-         .logo{         
-         display: block; 
+@media (max-width: 1080px) {
+         .logo{
+         display: block;
          position: absolute;
-         height: 60;                 
+         height: 60;
          left: 45%;
-         transform: translate(-50%, -10%);         
+         transform: translate(-50%, -10%);
          }
-    
+
     .checkbtn{
-        display: block;     
+        display: block;
     }
     ul {
         position: fixed;
@@ -124,7 +169,7 @@ main{
         top: 110px;
         left: 100%;
         text-align: center;
-        transition:  all .5s;        
+        transition:  all .5s;
     }
     nav ul li{
         display: block;
@@ -141,5 +186,17 @@ main{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    .contenido-banner-texto{    
+        max-width: 1500px;
+        margin: 1px auto;
+        
+    }
+    .contenido-banner-texto h1{    
+        font-size: 20px;                
+        margin-bottom: 10px;        
+    }
+    .contenido-banner-texto p{    
+        font-size: 18px;        
     }
 }
