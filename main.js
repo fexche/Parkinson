@@ -1,3 +1,6 @@
 
 
-alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
+
+let ancho = document.getElementById("x1").offsetWidth
+
+document.getElementById("x1").innerHTML=ancho
