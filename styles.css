@@ -15,9 +15,11 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
-body{
-    background-color: #f9f9fa;
+body{    
     font-family:Arial, Helvetica, sans-serif ;
+    /*aplicar degradado*/
+    /* background-image: linear-gradient(to top,hsl(282, 34%, 60%) 0%,#ffffff 100% ); */
+    background-color: rgb(118, 109, 125);
 }
 .menu-principal{
     background-color:white;
@@ -64,8 +66,8 @@ li a.active, li a:hover{
 /* ******/
 main{
     /* background-color: rgb(252, 250, 253); */
-    padding: 40px 20px;
-     margin-top: 50px; 
+    padding: 20px 20px;
+     margin-top: 1px; 
     text-align: justify;
 }
  .banner{
@@ -110,11 +112,11 @@ main{
     padding: 40px;
     background: #dfdfeb;
     border-radius: 5px;
-    /* box-shadow: 0px 10px 10px rgb(150, 150, 150) ; */
-    background-color: rgb(0 0 0 / 70%);
+    /* box-shadow: 0px 10px 10px rgb(150, 150, 150) ; */    
+    background-color: rgb(0 0 0 / 30%);
 }
 .contenedor p {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 18px;
     font-weight: 250;
 }
@@ -211,11 +213,28 @@ main{
    /* margin: 1px auto;    */
 }
 .contenido-banner-texto h1{
-   font-size: 20px;
+   font-size: 25px;
    margin-bottom: 10px;
    
 }
 .contenido-banner-texto p{
-   font-size: 17px;
+   font-size: 22px;
 }
 }
+
+@media (max-width: 740px) {
+  
+    .contenido-banner-texto{        
+       max-width: 1500px;
+       /* margin: 1px auto;    */
+    }
+    .contenido-banner-texto h1{
+       font-size: 20px;
+       margin-bottom: 10px;
+       
+    }
+    .contenido-banner-texto p{
+       font-size: 17px;
+    }
+    }
+    
