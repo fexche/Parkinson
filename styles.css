@@ -18,8 +18,8 @@ html {
 body{    
     font-family:Arial, Helvetica, sans-serif ;
     /*aplicar degradado*/
-    /* background-image: linear-gradient(to top,hsl(282, 34%, 60%) 0%,#ffffff 100% ); */
-    background-color: rgb(118, 109, 125);
+     background-image: linear-gradient(to top,hsl(282, 34%, 60%) 0%,#ffffff 100% ); 
+    /* background-color: rgb(118, 109, 125); */
 }
 .menu-principal{
     background-color:white;
@@ -111,9 +111,9 @@ main{
     margin: 30px auto;
     padding: 40px;
     background: #dfdfeb;
-    border-radius: 5px;
-    /* box-shadow: 0px 10px 10px rgb(150, 150, 150) ; */    
-    background-color: rgb(0 0 0 / 30%);
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;     
+    background-color: rgba(83, 88, 145, 0.3);
 }
 .contenedor p {
     margin-top: 30px;
@@ -123,6 +123,37 @@ main{
 .contenedor h3{
     margin-top: 20px;
 }
+
+/* Seccion de Actividades */
+.contenedor-actividades{
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #e7cece;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;     
+}
+
+/* Proximas Actividades */
+
+.contenedor-proximas{
+    display: grid;
+    /*Agregar Columnas*/
+    /* grid-template-columns: 300px 300px; */
+    /* Agregar Filas*/
+    /* grid-template-rows: 200px 500px; */
+    /* Otra Forma */
+    /* grid: 200px 500px / 300px 300px */
+    /* grid-template-columns: 33.33% 33.33% 33.33%; */
+
+    /* dividir por fraccion */
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(1,1fr );
+}
+
+
+/* Secccion de Ultimas Actividades*/
 
 #check{
     display: none;
@@ -204,6 +235,7 @@ main{
     .contenido-banner-texto p{
         font-size: 24px;
     }
+    
 }
 
 @media (max-width: 880px) {
@@ -236,5 +268,24 @@ main{
     .contenido-banner-texto p{
        font-size: 17px;
     }
+}
+@media (min-width: 1200px) {
+    .contenedor-ultimas{
+        display: grid;
+        /*Agregar Columnas*/
+        /* grid-template-columns: 300px 300px; */
+        /* Agregar Filas*/
+        /* grid-template-rows: 200px 500px; */
+        /* Otra Forma */
+        /* grid: 200px 500px / 300px 300px */
+        /* grid-template-columns: 33.33% 33.33% 33.33%; */
+    
+        /* dividir por fraccion */
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        align-items: center;
     }
+    
+}
     
