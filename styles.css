@@ -5,7 +5,7 @@
     text-decoration: none;
     /*quitar los puntos de la lista*/
     list-style: none;
-    font-family: 'Lucida Sans';
+
 
 }
 html {
@@ -15,10 +15,11 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
-body{    
-    font-family:Arial, Helvetica, sans-serif ;
+body
+{
+    font-family: 'Open Sans';
     /*aplicar degradado*/
-     background-image: linear-gradient(to top,hsl(282, 34%, 60%) 0%,#ffffff 100% ); 
+     background-image: linear-gradient(to top,hsl(282, 34%, 60%) 0%,#ffffff 100% );
     /* background-color: rgb(118, 109, 125); */
 }
 .menu-principal{
@@ -28,7 +29,7 @@ body{
     /* box-shadow: 0px 10px 20px rgb(150, 150, 150) ; */
 }
 .menu{
-    font-size: 20px;    
+    font-size: 20px;
     text-decoration: none;
 }
 .logo{
@@ -67,14 +68,20 @@ li a.active, li a:hover{
 main{
     /* background-color: rgb(252, 250, 253); */
     padding: 20px 20px;
-     margin-top: 1px; 
+     margin-top: 1px;
     text-align: justify;
+
+}
+main h1{
+text-align: center;
+font-size: 50px;
+/* text-transform: uppercase; */
 }
  .banner{
-    background-image:url(./image/Fondo1.jpg) ;
+    background-image:url(./image/Tulipan1.png) ;
     background-repeat: no-repeat;
     background-size: cover ;
-    height: 500px; 
+    height: 500px;
     /* padding: 20px; */
     /* margin-top: 25px;     */
     /* position: relative; */
@@ -112,7 +119,7 @@ main{
     padding: 40px;
     background: #dfdfeb;
     border-radius: 15px;
-    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;     
+    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;
     background-color: rgba(83, 88, 145, 0.3);
 }
 .contenedor p {
@@ -124,21 +131,117 @@ main{
     margin-top: 20px;
 }
 
+
 /* Seccion de Actividades */
-.contenedor-actividades{
-    max-width: 1500px;
+ .contenedor-actividades{
+    max-width: 1900px;
     margin: 30px auto;
     padding: 20px;
     background: #e7cece;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;     
+    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;
+
 }
+.contenedor-actividades-ultimas h1{
+    font-size:20px;
+    margin: 0px;
+    padding: 10px;
+    /* background-color: aquamarine;
+    border: 1px solid #340606; */
+    text-align: center;
+
+}
+.contenedor-actividades-ultimas p{
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px;
+    /* background-color: aquamarine;
+    border: 1px solid #340606; */
+    text-align: center;
+}
+.ultimas-imagen{
+    height: 350px;
+    width: auto;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ultimas-imagen img{
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgb(150, 150, 150) ;
+}
+
+/* Voces de personas con parkison */
+.contenedor-voces{
+    /* background-color:#FF878D ; */
+    background-image: linear-gradient(to top,#f47983 0%,#fbfbfb 100% );
+    width: 100%;
+    /* height: 1000px; */
+    text-align: center;
+    padding-bottom: 10px;    
+}
+.contenedor-voces h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+.contenedor-voces p{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.contenedor-voces li{
+    padding: 5px;
+    font-size: 28px;
+    text-align: left;
+}
+ .voces-texto{
+    display: flex; 
+    width: 100%;
+    /* height: 100%; */
+    /* color: #ffffff;
+    background-color: #784a4e; */
+} 
+.voces-texto2{
+    width: 100%;
+    margin-left: 30px;
+    /* height: 100%; */
+    /* color: #c52431;
+    background-color: #292e92; */
+}
+ 
+.contenedor-voces-personas{
+    display:flex; 
+    justify-content: center;
+    max-width: 1900px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgb(202, 13, 13) ;
+    background-image: linear-gradient(to top,#8895fe 0%,#87e6ff 80% );
+} 
+
+.voces-imagen img{
+    margin: 10px;
+    width: 700px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgb(19, 18, 18) ;
+}
+
+.voces-caracteristicas{
+    text-align: left;
+}
+
+
 
 /* Proximas Actividades */
 
-.contenedor-proximas{
-    display: grid;
+/* .contenedor-proximas{
+    display: grid; */
     /*Agregar Columnas*/
     /* grid-template-columns: 300px 300px; */
     /* Agregar Filas*/
@@ -149,8 +252,8 @@ main{
 
     /* dividir por fraccion */
     /* grid-template-columns: 1fr; */
-    grid-template-columns: repeat(1,1fr );
-}
+    /* grid-template-columns: repeat(1,1fr );
+} */
 
 
 /* Secccion de Ultimas Actividades*/
@@ -169,6 +272,7 @@ main{
     margin-right: 20px;
     cursor: pointer;
 }
+
 /*Banner*/
 
 /* Responsive */
@@ -190,7 +294,7 @@ main{
          left: 45%;
          transform: translate(-50%, -10%);
          }
-         
+
 
     .checkbtn{
         display: block;
@@ -222,7 +326,7 @@ main{
     #check:checked ~ ul{
         left: 0;
     }
-    .contenido-banner-texto{        
+    .contenido-banner-texto{
         max-width: 1500px;
         margin: 1px auto;
         box-sizing: border-box;
@@ -230,24 +334,24 @@ main{
     .contenido-banner-texto h1{
         font-size: 20px;
         margin-bottom: 10px;
-        
+
     }
     .contenido-banner-texto p{
         font-size: 24px;
     }
-    
+
 }
 
 @media (max-width: 880px) {
-  
-.contenido-banner-texto{        
+
+.contenido-banner-texto{
    max-width: 1500px;
    /* margin: 1px auto;    */
 }
 .contenido-banner-texto h1{
    font-size: 25px;
    margin-bottom: 10px;
-   
+
 }
 .contenido-banner-texto p{
    font-size: 22px;
@@ -255,37 +359,56 @@ main{
 }
 
 @media (max-width: 740px) {
-  
-    .contenido-banner-texto{        
+
+    .contenido-banner-texto{
        max-width: 1500px;
        /* margin: 1px auto;    */
     }
     .contenido-banner-texto h1{
        font-size: 20px;
        margin-bottom: 10px;
-       
+
     }
     .contenido-banner-texto p{
        font-size: 17px;
     }
 }
+
 @media (min-width: 1200px) {
-    .contenedor-ultimas{
+    .contenedor-actividades{
         display: grid;
-        /*Agregar Columnas*/
-        /* grid-template-columns: 300px 300px; */
-        /* Agregar Filas*/
-        /* grid-template-rows: 200px 500px; */
-        /* Otra Forma */
-        /* grid: 200px 500px / 300px 300px */
-        /* grid-template-columns: 33.33% 33.33% 33.33%; */
-    
-        /* dividir por fraccion */
-        /* grid-template-columns: 1fr; */
-        grid-template-columns: repeat(3,1fr);
-        text-align: center;
-        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        /* Separacacion de Columna */
+        column-gap: 10px;
     }
-    
+/* .contenedor-voces-personas{
+    display:inline-block; */
+    /* justify-content: center;
+    max-width: 1900px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgb(19, 18, 18) ;
+    background-image: linear-gradient(to top,#8895fe 0%,#87e6ff 80% ); */
 }
-    
+@media (max-width: 1200px) {
+    .voces-texto{
+        display: block; 
+        /* width: 100%;
+        height: 100%;
+        color: #ffffff;
+        background-color: #784a4e; */
+    } 
+    .contenedor-voces-personas{
+        display:block; 
+        margin-left: 20px;
+        margin-right: 20px;
+    }  
+    .voces-imagen img{
+        /* margin: 10px; */
+         width: 95%;        
+        /* border-radius: 50px;
+        box-shadow: 0px 10px 10px rgb(19, 18, 18) ; */
+    }   
+}
+
