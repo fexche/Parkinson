@@ -331,13 +331,16 @@ font-size: 50px;
         margin: 1px auto;
         box-sizing: border-box;
     }
+    .banner{
+        height:  800px ;
+    }
     .contenido-banner-texto h1{
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 10px;
 
     }
     .contenido-banner-texto p{
-        font-size: 24px;
+        font-size: 25px;
     }
 
 }
@@ -353,8 +356,11 @@ font-size: 50px;
    margin-bottom: 10px;
 
 }
+.banner{
+    height: 700px;
+}
 .contenido-banner-texto p{
-   font-size: 22px;
+   font-size: 24px;
 }
 }
 
@@ -369,8 +375,11 @@ font-size: 50px;
        margin-bottom: 10px;
 
     }
+    .banner{
+        height: 1000px;
+    }
     .contenido-banner-texto p{
-       font-size: 17px;
+       font-size: 24px;
     }
 }
 
