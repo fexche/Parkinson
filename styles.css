@@ -340,7 +340,7 @@ font-size: 50px;
 
     }
     .contenido-banner-texto p{
-        font-size: 25px;
+        font-size: 30px;
     }
 
 }
@@ -352,15 +352,15 @@ font-size: 50px;
    /* margin: 1px auto;    */
 }
 .contenido-banner-texto h1{
-   font-size: 25px;
+   font-size: 28px;
    margin-bottom: 10px;
 
 }
 .banner{
-    height: 700px;
+    height: 950px;
 }
 .contenido-banner-texto p{
-   font-size: 24px;
+   font-size: 30px;
 }
 }
 
@@ -371,7 +371,7 @@ font-size: 50px;
        /* margin: 1px auto;    */
     }
     .contenido-banner-texto h1{
-       font-size: 20px;
+       font-size: 28px;
        margin-bottom: 10px;
 
     }
@@ -379,7 +379,7 @@ font-size: 50px;
         height: 1000px;
     }
     .contenido-banner-texto p{
-       font-size: 24px;
+       font-size: 27px;
     }
 }
 
